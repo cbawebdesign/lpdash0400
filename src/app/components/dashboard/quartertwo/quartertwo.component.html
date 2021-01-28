@@ -1,0 +1,20 @@
+<!-- <a>test</a> -->
+<div *ngIf="afAuth.user | async as user">
+
+    <li *ngFor="let q22020Item of q22020Items | async"> 
+        <!-- <a [routerLink]="['/image', img.id]">     -->
+            <img src="{{q22020Item.downloadURL}}"
+           class="img" width="400" height="500" href="#" download="{{q22020Item.downloadURL}}">    
+           <button class="btn btn-outline-primary  btn-pill btn-xs" type="button" ><a href="#" download="{{q22020Item.downloadURL}}">  Download</a></button>
+       <!-- <img src="{{groceryItem.downloadURL}}"
+           class="img" width="500" height="500">     -->
+          
+          
+          <!-- <a href="{{groceryItem.downloadURL}}"  (click)="download()">Download</a> -->
+           <!-- <input type="button" (click)="download()" value="Download Employee Data"/>
+           <a [href]="groceryItem.downloadURL | async">{{ groceryItem.downloadURL | async }} </a>
+    
+         -->
+      </li>    
+    </div>
+

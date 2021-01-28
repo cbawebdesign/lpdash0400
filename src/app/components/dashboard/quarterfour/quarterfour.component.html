@@ -1,0 +1,56 @@
+<!-- <a>test</a>
+<div *ngIf="afAuth.user | async as user">
+
+<li *ngFor="let q42020Item of q42020Items | async">  
+        <!<img src="{{q42020Item.downloadURL}}"
+       class="img" width="400" height="500" href="#" download="{{q42020Item.downloadURL}}">>    
+       <a href="#" download="{{q42020Item.downloadURL}}"> Download Image </a>
+<p>test</p>
+
+       <a href="{{q42020Item.downloadUrl}}" target="_blank" rel="noopener">Download Me!</a>
+
+
+
+       <div *ngIf="downloadURL as url">
+        <h3>Results!</h3>
+        <a [href]="url" target="_blank" rel="noopener">Download Me!</a>
+      </div> 
+    <hr> -->
+    
+     
+    
+<!-- 
+       <button class="btn btn-primary-gradien btn-pill btn-air-primary" type="button" color="blue" routerLink="/dashboard/LP01Q42020"  placement="top"
+ngbTooltip="btn btn-primary-gradien btn-pill btn-air-success">Primary Button</button> -->
+   <!-- <img src="{{groceryItem.downloadURL}}"
+       class="img" width="500" height="500">     -->
+      
+      
+      <!-- <a href="{{q42020Item.downloadURL}}"  (click)="download()">Download</a> -->
+
+       <!-- <input type="button" (click)="download()" value="Download Employee Data"/>
+       <a [href]="groceryItem.downloadURL | async">{{ groceryItem.downloadURL | async }} </a>
+
+     -->
+  <!-- </li>      -->
+
+       
+       
+       <div *ngIf="afAuth.user | async as user">
+
+       <li *ngFor="let q42020Item of q42020Items | async"> 
+           <!-- <a [routerLink]="['/image', img.id]">     -->
+               <img src="{{q42020Item.downloadURL}}"
+              class="img" width="400" height="500" href="#" download="{{q42020Item.downloadURL}}">    
+              <button class="btn btn-outline-primary  btn-pill btn-xs" type="button" ><a href="#" download="{{q42020Item.downloadURL}}">  Download</a></button>
+          <!-- <img src="{{groceryItem.downloadURL}}"
+              class="img" width="500" height="500">     -->
+             
+             
+             <!-- <a href="{{groceryItem.downloadURL}}"  (click)="download()">Download</a> -->
+              <!-- <input type="button" (click)="download()" value="Download Employee Data"/>
+              <a [href]="groceryItem.downloadURL | async">{{ groceryItem.downloadURL | async }} </a>
+       
+            -->
+         </li>    
+       </div>
